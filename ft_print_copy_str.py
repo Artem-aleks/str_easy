@@ -1,3 +1,2 @@
-def ft_print_cpoy_str(a, number):
-    for _ in range(number):
-        print(a)
+def ft_print_copy_str(str, number):
+    print(str * number)

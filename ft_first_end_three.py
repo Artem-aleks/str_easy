@@ -2,16 +2,11 @@ def ft_len(a):
     b = 0
     for i in a:
         b += 1
-    return b
+    return (b)
 
 
 def ft_first_end_three(a):
-    v = ft_len(a)
-    n = 3
-    if v > 5:
-        for i in range(v):
-            if i <= 2 or i >= v - n:
-                print(a[i])
+    if ft_len(a) > 5:
+        return (a[:3] + a[-3:])
     else:
-        for c in range(v):
-            print(a[0])
+        return (a[0] * ft_len(a))

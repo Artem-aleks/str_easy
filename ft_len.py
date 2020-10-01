@@ -1,6 +1,5 @@
-def ft_len(a):
-    b = 0
-    for i in a:
-        b += 1
-
-    print(b)
+def ft_len(str):
+    l = 0
+    for i in str:
+        l += 1
+    return (l)
