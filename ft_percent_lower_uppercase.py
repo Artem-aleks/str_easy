@@ -2,12 +2,13 @@ UPPERCASE = 'QWERTYUIOPASDFGHJKLZXCVBNMЁЙЦУКЕНГШЩЗХЪФЫВАПРО�
 LOWERCASE = 'qwertyuiopasdfghjklzxcvbnmёйцукенгшщзхъфывапролджэячсмитьбю'
 
 
-def ft_percent_lower_uppercase(a):
-    b = 0
-    c = 0
-    for char in a:
+def ft_percent_lower_uppercase(string):
+    count_uppercase = 0
+    count_lowercase = 0
+    for char in string:
         if char in UPPERCASE:
-            b += 1
+            count_uppercase += 1
         elif char in LOWERCASE:
-            c += 1
-    return b / c * 100
+            count_lowercase += 1
+    return count_lowercase / count_uppercase
+
